@@ -1,0 +1,53 @@
+name: Bootstrap portfolio publication
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'bootstrap/KINTSUGI_JARVIS_PORTFOLIO_1_0.zip'
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Verify and unpack publication archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive='bootstrap/KINTSUGI_JARVIS_PORTFOLIO_1_0.zip'
+          if [ ! -f "$archive" ]; then
+            echo "No bootstrap archive present; nothing to do."
+            exit 0
+          fi
+          echo "cb06f86628b7f21457c4a1120010b610f4168976f3474deef4e5c6d1e56f0677  $archive" | sha256sum -c -
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root=Path.cwd().resolve()
+          archive=Path('bootstrap/KINTSUGI_JARVIS_PORTFOLIO_1_0.zip')
+          with zipfile.ZipFile(archive) as z:
+              for info in z.infolist():
+                  target=(root / info.filename).resolve()
+                  if root not in target.parents and target != root:
+                      raise SystemExit(f"unsafe archive path: {info.filename}")
+              z.extractall(root)
+          PY
+          rm -f "$archive"
+          rmdir bootstrap 2>/dev/null || true
+      - name: Commit publication tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No publication changes."
+            exit 0
+          fi
+          git commit -m "Publish Kintsugi JARVIS portfolio 1.0"
+          git push origin HEAD:main
