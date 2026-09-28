@@ -1,0 +1,97 @@
+{
+  "version": "3.2.0",
+  "status": "NOT_DEPLOYED",
+  "capabilities": {
+    "local_runtime": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "local_browser": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "physical_phone": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "gmail_read": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "outlook_read": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "calendar_audience": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "calendar_canary": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "finance_coverage": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "schedule_saved": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "future_run_policy_read": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "independent_watchdog": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "measured_household_value": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "private_https_route": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "foreground_phone_cue": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "native_offline_replay": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "lock_screen_push": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    },
+    "provider_account_binding": {
+      "status": "NOT_ESTABLISHED",
+      "evidence": null,
+      "verified_at": null
+    }
+  },
+  "external_writes": 0,
+  "tasks_created": 0,
+  "protected_cash_floor_cents": null,
+  "selected_routine_windows": null,
+  "blocking_inputs": [],
+  "additional_acceptance_file": "LIVE_ACCEPTANCE.json"
+}

@@ -1,0 +1,103 @@
+{
+  "created_at_utc": "2026-09-28T05:16:44.138664+00:00",
+  "scope": "REPRODUCED_LOCAL_SYNTHETIC_PUBLICATION",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "household": {
+    "tests": 311,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "generated_iterations": {
+      "payload_mutation": 1000,
+      "cash_scenarios": 500,
+      "mixed_household_commands": 300
+    }
+  },
+  "bridge": {
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "loop_cases_within_tests": {
+      "unknown_field_mutations": 500,
+      "crash_delivery_sequences": 250
+    }
+  },
+  "runs": [
+    {
+      "name": "household-tests",
+      "command": [
+        "python",
+        "scripts/run_tests.py",
+        "--out",
+        "<OUTPUT>/household"
+      ],
+      "cwd": "components/household",
+      "returncode": 0,
+      "seconds": 16.01
+    },
+    {
+      "name": "bridge-tests",
+      "command": [
+        "python",
+        "scripts/run_tests.py",
+        "--json",
+        "<OUTPUT>/bridge/results.json"
+      ],
+      "cwd": "components/bridge",
+      "returncode": 0,
+      "seconds": 7.747
+    },
+    {
+      "name": "household-cli",
+      "command": [
+        "python",
+        "scripts/cli_smoke.py",
+        "--out",
+        "<OUTPUT>/household/CLI_RESULTS.json"
+      ],
+      "cwd": "components/household",
+      "returncode": 0,
+      "seconds": 24.138
+    },
+    {
+      "name": "household-workflows",
+      "command": [
+        "python",
+        "scripts/demo_workflows.py",
+        "--out",
+        "<OUTPUT>/household/WORKFLOW_RESULTS.json"
+      ],
+      "cwd": "components/household",
+      "returncode": 0,
+      "seconds": 2.098
+    },
+    {
+      "name": "bridge-demo",
+      "command": [
+        "python",
+        "-m",
+        "kintsugi_bridge",
+        "demo"
+      ],
+      "cwd": "components/bridge",
+      "returncode": 0,
+      "seconds": 1.555
+    },
+    {
+      "name": "publication-checks",
+      "command": [
+        "python",
+        "tools/check_publication.py"
+      ],
+      "cwd": ".",
+      "returncode": 0,
+      "seconds": 1.76
+    }
+  ],
+  "all_passed": true,
+  "live_accounts_accessed": false,
+  "live_notifications_sent": false,
+  "independent_audit": false
+}

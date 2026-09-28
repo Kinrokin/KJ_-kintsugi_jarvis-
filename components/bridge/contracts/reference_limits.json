@@ -1,0 +1,41 @@
+{
+  "status": "TRIAL_DEFAULTS_NOT_MEASURED_OPTIMA",
+  "limits": {
+    "rows": 2000,
+    "bytes": 8388608,
+    "producer_rows": 500,
+    "producer_pending": 100,
+    "producer_daily": 200,
+    "producer_daily_bytes": 524288,
+    "burst": 20,
+    "refill_per_second": 0.2,
+    "batch": 5,
+    "response_bytes": 180000,
+    "lease_seconds": 30,
+    "max_attempts": 5,
+    "ttl_seconds": 604800,
+    "db_pages": 4096,
+    "operator_events": 256
+  },
+  "additional_limits": {
+    "candidate_wire_bytes": 32768,
+    "json_depth": 8,
+    "text_summary_characters": 2048,
+    "source_references": 4,
+    "local_receipt_rows": 1000,
+    "local_payload_bytes": 4194304,
+    "monitor_nodes": 16,
+    "health_body_bytes": 2048,
+    "health_diagnostic_events": 256,
+    "normal_tick_items": 5,
+    "normal_tick_seconds": 2
+  },
+  "limits_do_not_cover": [
+    "volumetric attacks",
+    "kernel/socket buffers",
+    "external edge costs",
+    "filesystem beyond application database/journal",
+    "arbitrarily many principals enrolled by a privileged operator",
+    "other processes on the Pi"
+  ]
+}

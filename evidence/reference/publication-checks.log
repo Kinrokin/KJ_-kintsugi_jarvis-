@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "files_scanned": 190,
+  "failures": [],
+  "scope": "Heuristic sensitive-pattern and link/syntax checks; not exhaustive DLP or security audit."
+}

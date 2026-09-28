@@ -1,0 +1,65 @@
+{
+  "scope": "ACTUAL_LOCAL_CLI_SUBPROCESSES_SYNTHETIC_INPUTS",
+  "checks": [
+    {
+      "command": "doctor",
+      "status": "PASS"
+    },
+    {
+      "command": "init",
+      "status": "PASS"
+    },
+    {
+      "command": "routine",
+      "status": "PASS"
+    },
+    {
+      "command": "tick",
+      "status": "PASS"
+    },
+    {
+      "command": "capture",
+      "status": "PASS"
+    },
+    {
+      "command": "command",
+      "status": "PASS"
+    },
+    {
+      "command": "email",
+      "status": "PASS"
+    },
+    {
+      "command": "status",
+      "status": "PASS"
+    },
+    {
+      "command": "policy-probe",
+      "status": "PASS"
+    },
+    {
+      "command": "backup",
+      "status": "PASS"
+    },
+    {
+      "command": "measure",
+      "status": "PASS"
+    },
+    {
+      "command": "forecast",
+      "status": "PASS"
+    },
+    {
+      "command": "inflows",
+      "status": "PASS"
+    },
+    {
+      "command": "demo",
+      "status": "PASS"
+    }
+  ],
+  "check_count": 14,
+  "external_provider_calls": 0,
+  "external_mutations": 0,
+  "all_passed": true
+}

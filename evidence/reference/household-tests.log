@@ -1,0 +1,16 @@
+{
+  "scope": "LOCAL_UNIT_AND_MOCK_HTTP_CONTRACTS",
+  "tests": 311,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "seconds": 14.379597070000045,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "generated_iterations": {
+    "payload_mutation": 1000,
+    "cash_scenarios": 500,
+    "mixed_household_commands": 300
+  },
+  "live_provider_tests": 0
+}

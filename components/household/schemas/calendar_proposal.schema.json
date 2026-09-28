@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Narrow one-off calendar proposal",
+  "type": "object",
+  "required": [
+    "id",
+    "operation",
+    "operation_key",
+    "target",
+    "event_id",
+    "payload",
+    "expected_version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operation_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "obligation_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "operation": {
+      "enum": [
+        "calendar.create",
+        "calendar.update"
+      ]
+    },
+    "expected_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "required": [
+        "summary",
+        "start",
+        "end"
+      ],
+      "properties": {
+        "summary": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Do not add approved_by/privacy/risk fields. Actual adapter context and signed operator grant are separate. Date, identity, event-ownership and privacy validation are in calendar.py."
+}

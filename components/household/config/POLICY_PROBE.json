@@ -1,0 +1,5 @@
+{
+  "version": "kintsugi-household-3.1.1",
+  "challenge": "focused-repair-original-context-provider-bound-20260924",
+  "minimum_policy": "READ_ONLY; no external write, sharing, clinical input or invented completion."
+}

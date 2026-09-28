@@ -1,0 +1,16 @@
+{
+  "name": "Kintsugi Private Household Trial",
+  "short_name": "Kintsugi",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "description": "Private foreground routine trial. No background push or provider write access.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

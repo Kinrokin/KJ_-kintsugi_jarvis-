@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "idempotency_key": "school-change-0001",
+  "candidate_type": "schedule_change",
+  "urgency_hint": "HIGH",
+  "observed_at": "2026-09-25T12:00:00-05:00",
+  "source_refs": [
+    {
+      "kind": "gmail",
+      "account_alias": "demo_mail",
+      "object_id": "demo-message-1"
+    }
+  ],
+  "claims": {
+    "title": "DEMO: school pickup",
+    "summary": "Synthetic source claim; not verified.",
+    "local_date": "2026-09-26",
+    "local_time": "14:15",
+    "time_zone": "America/Chicago",
+    "reported_instant": "2026-09-26T19:15:00Z"
+  }
+}

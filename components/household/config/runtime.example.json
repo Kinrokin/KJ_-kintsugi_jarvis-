@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "home": "REPLACE_WITH_ABSOLUTE_PRIVATE_HOME",
+  "host": "127.0.0.1",
+  "port": 8765,
+  "origin": null,
+  "tls_cert": null,
+  "tls_key": null,
+  "worker_seconds": 30,
+  "mail_poll_seconds": 900,
+  "sources": [],
+  "push": {
+    "enabled": false,
+    "contact": "",
+    "daily_limit": 12
+  },
+  "continuity_export": true
+}

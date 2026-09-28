@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Private low-risk household command",
+  "type": "object",
+  "required": [
+    "command_id",
+    "op"
+  ],
+  "properties": {
+    "command_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "op": {
+      "enum": [
+        "capture",
+        "make_task",
+        "done",
+        "undo",
+        "snooze",
+        "skip",
+        "simplify",
+        "normal",
+        "accept",
+        "delegate",
+        "confirm_acceptance",
+        "condition",
+        "complete_obligation",
+        "resolve_source",
+        "reopen_obligation"
+      ]
+    },
+    "object_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "acceptance_note": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "resolution_note": {
+      "type": "string"
+    },
+    "deadline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expected_revision": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "minutes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1440
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "value": {
+      "type": "boolean"
+    },
+    "claim_index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "client_event": {
+      "type": "object",
+      "required": [
+        "version",
+        "occurred_at",
+        "household_instance",
+        "source"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "household_instance": {
+          "type": "string"
+        },
+        "source": {
+          "const": "user_report"
+        },
+        "definition_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timezone": {
+          "type": "string"
+        },
+        "completion_variant": {
+          "enum": [
+            "full",
+            "minimum"
+          ]
+        },
+        "observed_user_revision": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$comment": "Household enforces contextual fields. HTTP timed commands require client_event; original tap time is self-report, not authorization evidence. Legacy synchronous CLI commands remain local-only."
+}

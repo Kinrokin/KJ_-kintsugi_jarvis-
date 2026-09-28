@@ -1,0 +1,72 @@
+{
+  "checked_date": "2026-09-25",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "MCP authorization, current revision resolved 2026-07-28",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization",
+      "design_relevance": "OAuth resource-server identity, audience, scope, expiry and error behavior; fixture credentials are not a substitute."
+    },
+    {
+      "id": "S2",
+      "title": "MCP transports, current revision resolved 2026-07-28",
+      "url": "https://modelcontextprotocol.io/specification/2026-07-28/basic/transports",
+      "design_relevance": "A tool manifest and a local Python dispatch are not an MCP transport. Test the actual client version and approved SDK."
+    },
+    {
+      "id": "S3",
+      "title": "Google: Connect and manage custom apps",
+      "url": "https://support.google.com/gemini/answer/17209137?co=GENIE.Platform%3DDesktop&hl=en-GA",
+      "design_relevance": "Google documents custom MCP apps and manual confirmation for write actions. Unattended candidate submission is a compatibility gate, not assumed."
+    },
+    {
+      "id": "S4",
+      "title": "AWS: at-least-once delivery",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues-at-least-once-delivery.html",
+      "design_relevance": "Duplicates can occur. Use idempotent consumption. AWS is a reference, not a purchased dependency."
+    },
+    {
+      "id": "S5",
+      "title": "AWS: visibility timeout",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html",
+      "design_relevance": "Leases retain unacknowledged work for redelivery. A download must not be a destructive dequeue."
+    },
+    {
+      "id": "S6",
+      "title": "AWS: setting up long polling",
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/best-practices-setting-up-long-polling.html",
+      "design_relevance": "A held request reduces empty polling. The included condition wait is local simulation, not a network transport."
+    },
+    {
+      "id": "S7",
+      "title": "SQLite PRAGMA documentation",
+      "url": "https://sqlite.org/pragma.html",
+      "design_relevance": "This reference requests DELETE journaling with EXTRA synchronization, bounded page count and busy timeout. Hardware durability still needs tests."
+    },
+    {
+      "id": "S8",
+      "title": "OWASP SQL injection prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+      "design_relevance": "Bind values using SQL parameters rather than concatenating untrusted text."
+    },
+    {
+      "id": "S9",
+      "title": "OWASP prompt injection prevention",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "design_relevance": "Structured data does not make external text trusted; restrict privileges and do not treat filtering as an elimination of risk."
+    },
+    {
+      "id": "S10",
+      "title": "MCP security best practices",
+      "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+      "design_relevance": "Resource access, token passthrough, SSRF and local-server compromise are distinct concerns. This package fetches no source URLs."
+    },
+    {
+      "id": "S11",
+      "title": "Google SRE monitoring distributed systems",
+      "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "design_relevance": "Distinguish internal signals from externally demonstrated behavior and keep alerts actionable. A local test is not an independently delivered alert."
+    }
+  ],
+  "note": "Primary sources. URLs can change. None establishes actual access to the user's apps or installed capabilities."
+}

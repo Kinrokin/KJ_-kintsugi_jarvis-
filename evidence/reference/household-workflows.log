@@ -1,0 +1,9 @@
+{
+  "scope": "EXECUTED_LOCAL_WORKFLOWS_WITH_SYNTHETIC_PROVIDER",
+  "routine": "minimum_done_undo_done",
+  "obligation": "accepted_conditions_reported_done_not_calendar_implied",
+  "calendar": "create_readback_and_timeout_reconciliation",
+  "provider_objects": 2,
+  "production_external_effects": 0,
+  "all_assertions_passed": true
+}

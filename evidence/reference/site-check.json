@@ -1,0 +1,18 @@
+{
+  "scope": "LOCAL_STATIC_HTML_CSS_RENDER",
+  "tool": "Playwright with system Chromium; offline set_content",
+  "desktop": {
+    "width": 1440,
+    "height": 1000,
+    "horizontal_overflow": false
+  },
+  "mobile_emulation": {
+    "width": 390,
+    "height": 844,
+    "horizontal_overflow": false
+  },
+  "links_count_each": 13,
+  "physical_phone": false,
+  "live_site": false,
+  "notes": "Layout inspected as local screenshots; no claim of deployed Pages or full accessibility certification."
+}

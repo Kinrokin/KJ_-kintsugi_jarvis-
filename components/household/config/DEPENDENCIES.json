@@ -1,0 +1,39 @@
+{
+  "runtime": [
+    {
+      "name": "Python",
+      "version_requirement": ">=3.10",
+      "source": "existing trusted installation"
+    },
+    {
+      "name": "IANA timezone data",
+      "version_requirement": "available for America/Chicago",
+      "source": "OS database or separately approved tzdata"
+    }
+  ],
+  "optional_developer_tests": [
+    {
+      "name": "Playwright and Chromium",
+      "installed_by_this_build": false,
+      "required_for_runtime": false
+    },
+    {
+      "name": "OpenSSL",
+      "installed_by_this_build": false,
+      "required_for_runtime": false,
+      "purpose": "Temporary local test certificate only; never installs trust"
+    }
+  ],
+  "network_runtime": "Disabled by default except local UI. Optional consented read-only mail and generic push. Separate operator Google canary remains disabled.",
+  "automatic_installations": false,
+  "api_cost_default_cents": 0,
+  "optional_runtime": [
+    {
+      "name": "pywebpush",
+      "version": "2.5.0",
+      "installed_here": false,
+      "purpose": "opt-in Web Push adapter",
+      "transitive_lock": "REQUIRES_TARGET_RESOLUTION_AND_REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "evidence_class": "REDACTED_OPERATOR_REPORTED_DEVELOPMENT_CALIBRATION",
+  "raw_private_records_published": false,
+  "dates": "September 2026 development conversation; individual timestamps omitted when not independently bound to provider records",
+  "not_an_independent_benchmark": true,
+  "observations": [
+    {
+      "id": "FIELD-001",
+      "capability": "Explicit skill reasoning",
+      "result": "REPORTED_PASS",
+      "observation": "Directly prompted synthetic tests separated sender claims, user statements and assumptions.",
+      "limit": "Instructions included expected behavior; not a blind causal test."
+    },
+    {
+      "id": "FIELD-002",
+      "capability": "Indirect injection example",
+      "result": "REPORTED_PASS",
+      "observation": "An obvious override embedded in synthetic email was rejected as authority.",
+      "limit": "No live adversarial tool execution or general injection certification."
+    },
+    {
+      "id": "FIELD-003",
+      "capability": "Minimum mode",
+      "result": "REPORTED_PASS",
+      "observation": "Explicit request reduced optional burden while leaving consequential obligations and completion separate.",
+      "limit": "Some answers overstated inferred fatigue; wording was corrected."
+    },
+    {
+      "id": "FIELD-004",
+      "capability": "Automatic skill routing",
+      "result": "NOT_VERIFIED",
+      "observation": "Implicit household answers varied; no visible invocation telemetry established skill selection.",
+      "limit": "Kintsugi-like wording does not prove routing."
+    },
+    {
+      "id": "FIELD-005",
+      "capability": "Keep creation/update/no-op",
+      "result": "REPORTED_PASS",
+      "observation": "One synthetic record was reportedly found across turns, updated in place, then left unchanged.",
+      "limit": "Not proof of concurrent or crash-safe idempotency."
+    },
+    {
+      "id": "FIELD-006",
+      "capability": "Scheduled Keep execution",
+      "result": "REPORTED_PASS",
+      "observation": "A configured workflow reportedly added a marker then no-opped on repeated runs.",
+      "limit": "Some runs used Run now; timing autonomy must be recorded separately."
+    },
+    {
+      "id": "FIELD-007",
+      "capability": "Unexpected human edit",
+      "result": "REPORTED_PASS",
+      "observation": "Workflow reported a human marker and refrained from overwriting it.",
+      "limit": "No race during dispatch was tested."
+    },
+    {
+      "id": "FIELD-008",
+      "capability": "Duplicate notes",
+      "result": "REPORTED_PASS",
+      "observation": "Two same-title records were reported contradicted; neither was chosen or modified.",
+      "limit": "Title lookup is not a unique database key."
+    },
+    {
+      "id": "FIELD-009",
+      "capability": "Ordinary obligation lifecycle",
+      "result": "REPORTED_PASS",
+      "observation": "Candidate, acceptance, reminder completion, user-reported fulfillment and closed no-op were kept separate.",
+      "limit": "Synthetic school-call content; provider outcome not asserted."
+    },
+    {
+      "id": "FIELD-010",
+      "capability": "Manual Gmail ingestion",
+      "result": "REPORTED_PASS",
+      "observation": "A direct user instruction produced one unverified candidate.",
+      "limit": "Originally overstated as ambient; corrected to supervised."
+    },
+    {
+      "id": "FIELD-011",
+      "capability": "One-shot ambient ingestion",
+      "result": "REPORTED_PASS",
+      "observation": "A preconfigured matching-message monitor reportedly created a candidate without a new prompt.",
+      "limit": "Monitor completed after its target; continuous watch not demonstrated."
+    },
+    {
+      "id": "FIELD-012",
+      "capability": "Native review-task creation",
+      "result": "REPORTED_PASS",
+      "observation": "An email-triggered workflow reportedly created a candidate and a timed review task without secondary confirmation.",
+      "limit": "Native tool permission is not a custom MCP-write permission."
+    },
+    {
+      "id": "FIELD-013",
+      "capability": "Interactive/manual phone notification",
+      "result": "OPERATOR_OBSERVED_SUCCESS",
+      "observation": "Phone notifications were seen in selected manual/interactive trials.",
+      "limit": "Original app attribution was uncertain in an early trial; later examples showed Tasks."
+    },
+    {
+      "id": "FIELD-014",
+      "capability": "Background-created notification",
+      "result": "OPEN_FAILURE",
+      "observation": "Some timed tasks did not yield a noticed phone alert; editing a time manually was followed by one.",
+      "limit": "Root cause, reliability rate and internal Spark API path unknown."
+    },
+    {
+      "id": "FIELD-015",
+      "capability": "Longer lead time/two-step edit remedy",
+      "result": "NOT_ESTABLISHED",
+      "observation": "The operator reported unsuccessful follow-up notification tests.",
+      "limit": "No remedy was promoted to a reliable operating rule."
+    },
+    {
+      "id": "FIELD-016",
+      "capability": "Private Calendar alert alternative",
+      "result": "PROPOSED_NOT_RUN",
+      "observation": "A private Calendar-based alert route was proposed after Tasks failures.",
+      "limit": "No success or reliability claim."
+    },
+    {
+      "id": "FIELD-017",
+      "capability": "Live custom MCP write",
+      "result": "NOT_RUN",
+      "observation": "Bridge tests are offline; live Spark custom-app confirmation trial remains unperformed.",
+      "limit": "No production OAuth, MCP transport, or external delivery."
+    },
+    {
+      "id": "FIELD-018",
+      "capability": "Sustained value trial",
+      "result": "NOT_RUN",
+      "observation": "Time returned, missed obligations and maintenance burden need a measured period.",
+      "limit": "No claimed dollars saved or quantified productivity gain."
+    }
+  ]
+}

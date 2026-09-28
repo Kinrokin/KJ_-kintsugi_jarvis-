@@ -1,0 +1,2 @@
+# Use and provenance
+The newly generated project-specific source and documents are provided for the user's review and modification. No claim of independent security certification or fitness for regulated financial/clinical operation is made. Preserve provenance and safety notes in derivatives. Historical user-provided archives retain their original terms. Linked documentation is referenced, not bundled wholesale. Python/optional developer tooling retain their own licenses and are not redistributed here.

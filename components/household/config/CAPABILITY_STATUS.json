@@ -1,0 +1,80 @@
+{
+  "version": "3.2.0",
+  "default_mode": "PRIVATE_LOCAL_EMPTY_STATE",
+  "user_environment_installed": false,
+  "capabilities": [
+    {
+      "name": "household_ui_and_routines",
+      "code": "IMPLEMENTED",
+      "evidence": "LOCAL_HTTP_AND_SYNTHETIC_DOM",
+      "live_user": "NOT_RUN"
+    },
+    {
+      "name": "supervisor_and_instance_lock",
+      "code": "IMPLEMENTED",
+      "evidence": "ACTUAL_LOCAL_SUBPROCESS",
+      "target_OS": "NOT_RUN"
+    },
+    {
+      "name": "Gmail_Graph_metadata",
+      "code": "IMPLEMENTED",
+      "evidence": "MOCK_HTTP_CONTRACTS",
+      "live_accounts": "NOT_RUN"
+    },
+    {
+      "name": "OAuth_personal_onboarding",
+      "code": "IMPLEMENTED",
+      "evidence": "SYNTHETIC_PROTOCOL",
+      "live_consent": "NOT_RUN"
+    },
+    {
+      "name": "WebPush",
+      "code": "OPTIONAL_ADAPTER_AND_SERVICE_WORKER",
+      "evidence": "MOCK_TRANSPORT_AND_JS_ONLY",
+      "dependency_installed_here": false,
+      "physical_phone": "NOT_RUN"
+    },
+    {
+      "name": "Windows_DPAPI_and_autostart",
+      "code": "IMPLEMENTED_PLAN_OPT_IN",
+      "evidence": "SOURCE_SYNTAX_AND_PLAN_TESTS_ONLY",
+      "Windows_execution": "NOT_RUN"
+    },
+    {
+      "name": "Linux_user_unit",
+      "code": "PLAN_GENERATOR",
+      "evidence": "PLAN_TESTS",
+      "installation": "NOT_RUN"
+    },
+    {
+      "name": "independent_watchdog",
+      "code": "STATUS_COMMAND",
+      "configured": false,
+      "independent_failure_domain": false
+    },
+    {
+      "name": "skills",
+      "code": "FOUR_SKILL_FOLDERS",
+      "installed": false
+    },
+    {
+      "name": "calendar_broker",
+      "code": "INHERITED_SEPARATE_OPERATOR_PATH",
+      "runtime_HTTP_route": false,
+      "live_provider": "NOT_RUN"
+    },
+    {
+      "name": "money_movement_and_browser_writes",
+      "code": "NOT_IMPLEMENTED"
+    },
+    {
+      "name": "always_listening_or_wakeword",
+      "code": "NOT_IMPLEMENTED"
+    },
+    {
+      "name": "paid_AI_API",
+      "code": "NOT_IMPLEMENTED",
+      "spend_authorized": false
+    }
+  ]
+}

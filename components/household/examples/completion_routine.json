@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "title": "Ordinary maintenance demo",
+  "anchor": "completion",
+  "timezone": "America/Chicago",
+  "window_minutes": 90,
+  "full_steps": [
+    "Brush teeth",
+    "Prepare clothes",
+    "Check the next commitment"
+  ],
+  "minimum_steps": [
+    "Brush teeth"
+  ],
+  "max_nudges": 2,
+  "quiet_start": "22:30",
+  "quiet_end": "06:00",
+  "kind": "ordinary",
+  "fold": 0,
+  "gap": "shift_forward",
+  "id": "completion-maintenance",
+  "first_due": "2026-09-24T20:00:00-05:00",
+  "interval": 7,
+  "interval_semantics": "calendar_days"
+}

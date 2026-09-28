@@ -1,0 +1,116 @@
+{
+  "version": "3.2.0",
+  "evidence_required": "Actual observed outcome on target; never change from test counts",
+  "checks": [
+    {
+      "id": "WINDOWS_PYTHON",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "WINDOWS_DPAPI",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "OS_AUTOSTART",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "REBOOT_AND_SLEEP",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PRIVATE_PHONE_TLS",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PHONE_LOGIN",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PHONE_CAPTURE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PHONE_DONE_UNDO_SNOOZE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "NATIVE_OFFLINE_DAY_BOUNDARY",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "MULTITAB_NATIVE_LOCK",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PUSH_OPT_IN",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PUSH_ACTUAL_SCREEN",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PUSH_LOCKED_SCREEN",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "PUSH_UNSUBSCRIBE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "LIVE_GMAIL_SCOPE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "LIVE_HOTMAIL_SCOPE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "MAIL_OUTAGE_RECOVERY",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "FUTURE_TASK_POLICY_BYTES",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "INDEPENDENT_WATCHDOG",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "NO_FAMILY_DISCLOSURE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "30_DAY_VALUE",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "SEPARATE_CALENDAR_CANARY",
+      "status": "NOT_RUN",
+      "evidence": null
+    }
+  ]
+}

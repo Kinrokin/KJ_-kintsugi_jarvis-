@@ -1,0 +1,103 @@
+{
+  "version": "3.1.1",
+  "status": "NOT_RUN",
+  "physical_device": null,
+  "browser_version": null,
+  "network_scope": null,
+  "trusted_tls_origin": null,
+  "operator": null,
+  "started_at": null,
+  "calendar_writer_enabled": false,
+  "patient_data_used": false,
+  "scenarios": [
+    {
+      "id": "PHONE-01",
+      "description": "Real phone reaches permitted private HTTPS without bypassing TLS warnings",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-02",
+      "description": "Login, capture and persistent server acknowledgment",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-03",
+      "description": "Private foreground routine cue is actually seen; not inferred from server offer",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-04",
+      "description": "Snooze changes reminder only, not underlying deadline",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-05",
+      "description": "Minimum Done while disconnected preserves original occurrence/time/variant on reconnect",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-06",
+      "description": "Real day-boundary completion-based successor anchored to original reported completion",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-07",
+      "description": "Repeat delivery of same queued ID creates one completion",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-08",
+      "description": "Native browser restart/offline shell cache and outbox persistence",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-09",
+      "description": "Explicit concurrent edit is held for review, not overwritten",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-10",
+      "description": "Undo works and no personal item is shared to Family calendar",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-11",
+      "description": "Host shutdown, session expiry and reconnect shown honestly",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    },
+    {
+      "id": "PHONE-12",
+      "description": "Lock-screen/closed-tab delivery separately classified UNSUPPORTED in this release",
+      "status": "NOT_RUN",
+      "actual_observation": null,
+      "evidence": null
+    }
+  ],
+  "residual_limitations": [
+    "Foreground cues only; no push",
+    "Host must remain running",
+    "No live email ingestion or always-on installation"
+  ]
+}

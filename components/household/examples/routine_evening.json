@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "title": "Private evening routine — choose the window",
+  "anchor": "clock",
+  "timezone": "America/Chicago",
+  "window_minutes": 90,
+  "full_steps": [
+    "Brush teeth",
+    "Prepare clothes",
+    "Check the next commitment"
+  ],
+  "minimum_steps": [
+    "Brush teeth"
+  ],
+  "max_nudges": 2,
+  "quiet_start": "22:30",
+  "quiet_end": "06:00",
+  "kind": "ordinary",
+  "fold": 0,
+  "gap": "shift_forward",
+  "id": "private-evening",
+  "wall_time": "20:30"
+}

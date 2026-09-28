@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Cite this research prototype by version or commit; no independent certification is implied."
+title: "Kintsugi JARVIS: Governed Household Agent Research Prototype"
+type: software
+authors:
+  - family-names: King
+    given-names: Robert
+version: "portfolio-1.0"
+date-released: 2026-09-28
+repository-code: "https://github.com/Kinrokin/KJ_-kintsugi_jarvis-"
+abstract: >-
+  AI-assisted household-agent research combining a private local application,
+  a bounded offline proposal-delivery bridge, and separately labeled native
+  Google Workspace calibration. Obligation, automation, delivery, and
+  completion are distinct states. Notification delivery remains unresolved.

@@ -1,0 +1,4 @@
+# OPTIONAL. No automatic pip/install action is performed by this package.
+# Approve a private virtual environment and validate its resolved transitive dependencies.
+# Transport adapter is written for this release. Upgrades require contract regression.
+pywebpush==2.5.0

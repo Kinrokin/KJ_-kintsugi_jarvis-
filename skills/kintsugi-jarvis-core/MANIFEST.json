@@ -1,0 +1,25 @@
+{
+  "edition": "public-calibration-1.0",
+  "files": [
+    {
+      "path": "CALIBRATION_TESTS.md",
+      "bytes": 3764,
+      "sha256": "dd4ffc990d0f5e83c6d6c1c74ef6798e128eb0e5dd13d9934d8554582e48b9a1"
+    },
+    {
+      "path": "EVALUATION_RUBRIC.md",
+      "bytes": 529,
+      "sha256": "94148f5bdecc2fc8be05a54476ab6bcb21dbc9871da98730831724b9b7b1f12a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 686,
+      "sha256": "ce4f4301ecbd0dcba605a844e670650b6d203d0dbe79e9b28753c318cc37d874"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7609,
+      "sha256": "0894913dc3d76fe7c1cad401758413a87a269bf2cf01a5136ec0b4da6ca95947"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "mode": "LOCAL_ONLY_SYNTHETIC",
+  "public_listener": false,
+  "oauth_connected": false,
+  "after_submission": "stored",
+  "interrupted_tick": {
+    "leased": 1,
+    "staged": 1,
+    "duplicates": 0,
+    "acknowledged": 0,
+    "errors": [
+      "SIMULATED_PROCESS_LOSS"
+    ]
+  },
+  "recovery_tick": {
+    "leased": 1,
+    "staged": 0,
+    "duplicates": 1,
+    "acknowledged": 1,
+    "errors": []
+  },
+  "final_transport_status": "locally_received",
+  "private_inbox": {
+    "receipts": 1,
+    "candidates": 1,
+    "states": {
+      "UNVERIFIED": 1
+    },
+    "recovering": false
+  },
+  "health_before": {
+    "node-demo": "HEALTHY"
+  },
+  "health_after": {
+    "node-demo": "UNREACHABLE"
+  },
+  "health_alert_delivery": "NOT_SENT",
+  "live_provider_writes": 0,
+  "v3_2_modified": false
+}

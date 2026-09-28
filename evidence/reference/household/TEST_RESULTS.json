@@ -1,0 +1,1262 @@
+{
+  "scope": "LOCAL_UNIT_AND_MOCK_HTTP_CONTRACTS",
+  "tests": 311,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "seconds": 14.379597070000045,
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "generated_iterations": {
+    "payload_mutation": 1000,
+    "cash_scenarios": 500,
+    "mixed_household_commands": 300
+  },
+  "live_provider_tests": 0,
+  "cases": [
+    {
+      "id": "test_broker.BrokerTests.test_1000_payload_mutations",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A01_fake_receipt_has_no_broker_entrypoint",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A01_forged_approval_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A01_wrong_operator_password",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A02_revoke_before_dispatch_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A03_revoke_after_dispatch_does_not_claim_undo",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A04_restart_invalidates_old_permit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A04_supported_restore_pauses",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A05_restore_cannot_erase_external_intent",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_A06_risk_field_cannot_downgrade_policy",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_I01_positive_exact_calendar_action",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_I02_update_version_race",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_I03_timeout_after_commit_no_retry",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_P01_shared_target_no_scope_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_P01_shared_target_private_label_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_P02_attachment_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_P02_shared_description_blocked_even_if_selected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_P03_explicit_minimal_sharing_succeeds",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_U04_recovery_to_useful_work",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_bulk_recurrence_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_changed_audience_invalidates_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_create_id_is_stable",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_expired_approval_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_future_approval_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_live_disabled_by_default",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_local_second_connection_cannot_reserve_same_operation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_mismatched_readback_not_verified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_missing_capability_is_not_assumed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_missing_readback_does_not_authorize_resubmit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_money_action_impossible",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_mutated_payload_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_raw_application_rollback_cannot_replay_grant",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_restart_generation_never_reuses_old_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_second_target_operation_blocked_while_unknown",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_simultaneous_local_writers_one_effect",
+      "status": "PASS"
+    },
+    {
+      "id": "test_broker.BrokerTests.test_update_positive_path",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.CredentialBoundaryTests.test_F01_token_delay_checked_after_identity_before_socket_write",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.CredentialBoundaryTests.test_F02_real_http_path_checks_current_token_subject_before_write",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_backward_wall_clock_does_not_extend_permit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_expiry_during_preparation_blocks_before_intent",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_expiry_during_provider_preflight_blocks_patch",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_expiry_while_authority_lock_waits_rechecked_inside_transaction",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_live_call_cannot_supply_historical_time",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_positive_preparation_within_validity_succeeds",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F01_revoked_during_provider_preflight_refuses",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_account_changes_at_final_dispatch_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_google_unknown_not_verifiable_by_simulator",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_legacy_unbound_intent_remains_quarantined",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_mock_cannot_be_promoted_to_live_for_recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_same_account_different_connection_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_same_original_provider_recovers_without_resubmit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_same_provider_different_account_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_separate_simulator_database_is_not_same_provider",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_simulator_identity_survives_reopen",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F02_terminal_receipt_still_requires_original_binding",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F04_create_keeps_disclosed_private_no_reminder_defaults",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F04_default_reminders_preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F04_explicit_reminder_change_not_silently_allowed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F04_readback_verifies_partial_update_without_erasing_description",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.FocusBrokerTests.test_F04_title_edit_preserves_existing_reminders_and_metadata",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_auto_nudge_revision_can_rebase_but_not_change_report",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_capture_keeps_reported_and_received_times_separate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_changed_payload_same_id_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_completion_anchored_next_due_uses_reported_not_receipt_time",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_completion_before_occurrence_due_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_concurrent_human_edit_blocks_stale_completion",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_delayed_mode_change_applies_original_day_only",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_delayed_snooze_does_not_create_new_fifteen_minute_delay",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_full_variant_does_not_become_todays_minimum",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_future_clock_is_not_silently_rewritten",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_missing_displayed_variant_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_naive_client_time_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_offline_report_survives_database_reopen",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_original_day_minimum_survives_reconnection_and_window_expiry",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_outbox_replay_is_exactly_once",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_redefined_routine_does_not_reinterpret_queued_done",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_self_report_cannot_mint_provider_authority",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_snapshot_gives_displayed_steps_for_occurrences_original_day",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_undo_offline_completion_is_available",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_wrong_definition_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_wrong_household_outbox_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_focus_repairs.OfflineContextTests.test_F03_wrong_timezone_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H01_clock_anchor_not_completion_time",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H02_calendar_interval_DST",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H02_elapsed_completion_anchor",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H03_reminder_does_not_complete",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H04_done_is_self_report",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H05_duplicate_command",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H05_second_device_done_is_idempotent",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H06_undo",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H06_undo_invalidates_successor",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H07_missed_windows_do_not_avalanche",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H08_snooze_does_not_move_due",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H09_minimum_mode_expires",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H09_simplify",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H10_minimum_not_invented",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H10_no_clinical_routines",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H12_DST_fold",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H12_DST_gap",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_H12_gap_reject",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_O04_delayed_response_targets_original",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_U01_capture_persistence",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_U02_snooze_has_no_authority_ceremony",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_definition_version_required",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_done_stops_reminders",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_event_anchor_requires_report",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_event_future_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_future_done_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_id_reuse_payload_change_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_quiet_hours",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_reminder_limit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_stale_revision_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_unknown_fields_block_policy_injection",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.HouseholdTests.test_version_change_supersedes_open",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_A06_extracted_injection_remains_text",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_H11_delegation_unaccepted",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_O01_acceptance",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_O01_source_and_candidate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_O02_calendar_action_not_obligation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_O03_draft_not_submission",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_conditions_satisfied_success",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_deadline_remains_open_after_midnight",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_delegation_explicitly_accepted",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_email_conflict_not_newest_wins",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_email_duplicate_same_id",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_employer_patient_excluded",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_minimum_does_not_close_obligation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_no_automatic_cross_mailbox_merge",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_obligation_snooze_preserves_deadline",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.ObligationTests.test_unmet_condition_blocks_done",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.RepairLivenessTests.test_caller_receipt_remains_unverified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.RepairLivenessTests.test_changed_completed_obligation_is_visible_for_review",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.RepairLivenessTests.test_obligation_completion_is_undoable",
+      "status": "PASS"
+    },
+    {
+      "id": "test_household.RepairLivenessTests.test_source_conflict_recovery_is_useful",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_409_unknown_no_blind_retry",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_412_no_effect",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_500_unknown",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_I01_creation_contract_has_stable_id",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_I02_patch_sends_approved_etag",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_acl_read_verified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_attended_event_outside_scope",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_group_acl_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_non_kintsugi_event_not_modified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_pagination_failure_does_not_certify_audience",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_readback_comes_from_transport",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_redirect_not_followed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_unauthenticated_acl_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_integration.HttpContractTests.test_unknown_target_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_U01_positive_capture",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_U03_approval_endpoint_not_exposed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_cookie_not_accessible_to_javascript",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_cross_origin_login_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_csrf_required_for_mutation",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_dns_rebinding_host_blocked",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_no_state_without_session",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_policy_escalation_not_in_household_api",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_security_headers",
+      "status": "PASS"
+    },
+    {
+      "id": "test_local_ui.LocalUITests.test_unsafe_static_path_not_served",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_300_mixed_household_sequences",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_500_generated_cash_scenarios",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_capacity_does_not_delete_tasks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_cash_forecast_positive",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_duplicate_raw_transaction_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_existing_schedule_fields_preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_future_income_qualified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_incomplete_obligations_no_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_missing_transfer_semantics_visible",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_pending_credit_not_cash",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_raw_transfers_not_income",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_refund_not_payroll",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_same_day_debits_first",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_stale_no_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.FinanceTests.test_unset_floor_no_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_I04_missing_policy_degrades",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_I04_policy_read_current_bytes",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_I05_required_source_missing_no_all_clear",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_U01_capture_becomes_usable_task",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_U04_coverage_recovers",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_U05_measurement_not_invented",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_U05_metrics_preserve_costs",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_accepted_dependency_satisfies",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_bounded_budget_positive_then_block",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_capture_task_deduplicated",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_coverage_full_positive",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_dependency_risk_distinguishes_unknown",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_empty_coverage_not_all_clear",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_final_token_on_partial_page_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_full_pagination_positive",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_future_source_timestamp_not_accepted",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_json_duplicate_keys_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_json_nonfinite_rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_minimum_planner_excludes_clinical",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_no_false_scam_opportunity_approval",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_no_room_marks_unplaced_not_move_fixed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_partial_pagination_no_cursor_advance",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_running_late_preserves_fixed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_verified_opportunity_still_not_auto_apply",
+      "status": "PASS"
+    },
+    {
+      "id": "test_operations.OperationsTests.test_zero_default_paid_budget",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P01_legacy_timed_http_command_is_held_for_review",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P02_versioned_minimum_mode_command_succeeds",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P03_foreground_cues_are_not_claimed_as_push",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P04_cue_endpoint_requires_csrf",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P05_logout_invalidates_session",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P06_api_never_cached",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P07_service_worker_has_only_static_shell_allowlist",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P08_manifest_is_available_no_remote_start_url",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P09_forwarded_headers_do_not_bypass_origin",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P10_insecure_nonloopback_listener_is_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P11_public_listener_is_refused_even_with_tls",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P12_wildcard_listener_is_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P13_trial_requires_explicit_acknowledgment",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P14_origin_with_userinfo_is_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P15_malformed_origin_port_is_refused_before_binding",
+      "status": "PASS"
+    },
+    {
+      "id": "test_phone_trial_contract.PhoneSurfaceContractTests.test_P16_nonobject_json_is_refused_without_session_or_command_effect",
+      "status": "PASS"
+    },
+    {
+      "id": "test_release.ReleaseTests.test_all_routine_examples_are_accepted",
+      "status": "PASS"
+    },
+    {
+      "id": "test_release.ReleaseTests.test_packaged_policy_fixture_can_actually_be_read",
+      "status": "PASS"
+    },
+    {
+      "id": "test_release.ReleaseTests.test_python_source_syntax",
+      "status": "PASS"
+    },
+    {
+      "id": "test_release.ReleaseTests.test_wrong_state_schema_is_not_migrated_implicitly",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.LaneAndScopeTests.test_gmail_backward_cursor_is_degraded",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.LaneAndScopeTests.test_graph_alias_resolves_opaque_folder_before_sync",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.LaneAndScopeTests.test_graph_case_changed_opaque_folder_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.LaneAndScopeTests.test_household_lane_never_calls_mail_transport",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.LaneAndScopeTests.test_mail_lane_does_not_issue_routine_cues",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_gmail_account_switch_at_end_blocks_commit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_gmail_duplicate_scan_no_duplicate_candidate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_gmail_legitimate_metadata_ingestion",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_gmail_partial_pages_do_not_advance",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_gmail_wrong_account_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_cursor_roundtrip_exact",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_incomplete_pages_preserves_cursor",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_legitimate_full_delta",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_next_link_folder_change_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_next_link_host_injection_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_graph_page_limit_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_initial_incomplete_scan_commits_no_candidates",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_injection_stays_metadata_not_policy",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_metadata_retention_does_not_delete_active_candidate",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_reviewed_metadata_retention_succeeds",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_scope_change_needs_new_identity",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_source_removal_does_not_claim_obligation_done",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.MailContractTests.test_stale_history_is_explicit_not_silently_reset",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_account_identity_is_from_provider",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_device_decline_stops",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_device_flow_pending_then_success",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_google_pkce_state_and_no_write_scope",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_google_token_exchange_supplies_pkce",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_microsoft_device_destination_verified",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_nonrenewable_credential_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_oauth_remote_callback_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_refresh_rotation_preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_service_plan_does_not_install",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_service_plan_preserves_unknown_tasks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.OAuthAndInstallPlanTests.test_service_plan_rejects_control_character_paths",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_authenticated_receipt_is_not_human_done",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_crash_after_dispatch_is_not_retried",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_duplicate_cue_queued_once",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_expired_endpoint_disabled",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_expired_queued_cue_suppressed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_fast_receipt_survives_slow_send_return",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_forged_receipt_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_generic_payload_never_exposes_title",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_internal_host_endpoint_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_late_display_cannot_downgrade_opened",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_legitimate_subscription_is_explicit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_malformed_keys_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_no_historical_notifications_on_optin",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_paused_sender_never_called",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_provider_acceptance_not_display_or_completion",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_stale_human_context_suppressed",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_timeout_is_not_retried",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_undispatched_receipt_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.PushContractTests.test_unsubscribe_cancels_queued",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_cap_zero_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_default_has_no_sources_or_push_or_writer",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_doctor_does_not_certify_phone",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_duplicate_source_ids_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_empty_setup_creates_no_commitments",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_home_inside_package_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_instance_lock_excludes_second_process_handle",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_poll_limit",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_private_listener_needs_tls",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_push_needs_https",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_relative_home_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_setup_keeps_login_secret",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.RuntimeConfigTests.test_unknown_settings_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_http_forbidden",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_method_forbidden",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_network_exception_sanitized",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_redirect_credentials_and_port_forbidden",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_reference_path_escape_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_request_budget_stops_without_network",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_secret_overwrite_is_atomic",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_secret_roundtrip",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_secret_symlink_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_unapproved_host_forbidden",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.SecretTransportTests.test_unprotected_posix_file_refused",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_empty_coverage_is_not_all_clear",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_local_worker_without_network_succeeds",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_missing_credential_degrades_not_omits_source",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_modified_review_candidate_blocks",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_no_runtime_writer_or_approval_routes",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_pause_route_changes_only_local_network",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_push_subscribe_disabled_by_default",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_source_candidate_requires_review_then_acceptance",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_watchdog_is_separate_from_fresh_mail",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerAndApiTests.test_worker_can_poll_and_bound_repoll",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerDeliveryRaceTests.test_late_done_invalidates_already_queued_cue",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerDeliveryRaceTests.test_late_snooze_invalidates_already_queued_cue",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerDeliveryRaceTests.test_no_devices_no_nudge_consumption",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerDeliveryRaceTests.test_opted_in_device_receives_one_generic_attempt",
+      "status": "PASS"
+    },
+    {
+      "id": "test_runtime_operations.WorkerDeliveryRaceTests.test_reenabled_device_cannot_bypass_device_cap",
+      "status": "PASS"
+    }
+  ]
+}

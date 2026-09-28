@@ -1,0 +1,5 @@
+{
+  "file": "config/POLICY_PROBE.json",
+  "sha256": "6a1a77a91d7e946199a70c9a4171ad34cec2162cb3b816a72acd08b8db62f2a9",
+  "meaning": "Digest check is local; a future scheduled read still must execute."
+}

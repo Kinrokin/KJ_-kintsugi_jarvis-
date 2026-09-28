@@ -1,0 +1,86 @@
+{
+  "release": "LOCAL_REVIEW_ONLY",
+  "overall_public_deployment": "BLOCKED",
+  "gates": [
+    {
+      "gate": "reviewed_oauth_resource_server",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "mcp_sdk_transport_binding",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "spark_tool_negotiation",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "spark_write_confirmation_behavior",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "spark_scheduled_submission",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "spark_other_tool_privileges",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "real_gateway_network_edge_limits",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "real_pi_egress_transport",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "os_account_and_network_isolation",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "v3_2_sidecar_import_adapter",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "independent_monitor_host",
+      "status": "NOT_CONFIGURED",
+      "evidence": null
+    },
+    {
+      "gate": "independent_alert_provider",
+      "status": "NOT_CONFIGURED",
+      "evidence": null
+    },
+    {
+      "gate": "physical_phone_alert_received",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "real_pi_power_loss_restore",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "gate": "ledger_backup_rollback_detection",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    },
+    {
+      "gate": "retention_rotation_preserving_idempotency",
+      "status": "NOT_IMPLEMENTED",
+      "evidence": null
+    }
+  ]
+}
