@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'bootstrap/KINTSUGI_JARVIS_PORTFOLIO_1_0.zip'
+      - '.github/workflows/bootstrap-publication.yml'
 permissions:
   contents: write
 jobs:
@@ -36,6 +37,9 @@ jobs:
                       raise SystemExit(f"unsafe archive path: {info.filename}")
               z.extractall(root)
           PY
+          # The workflow token may not create workflow files. Publish the source tree
+          # without those two files; the authenticated GitHub connector adds them later.
+          rm -f .github/workflows/ci.yml .github/workflows/pages.yml
           rm -f "$archive"
           rmdir bootstrap 2>/dev/null || true
       - name: Commit publication tree
